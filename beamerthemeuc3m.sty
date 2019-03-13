@@ -1,0 +1,32 @@
+\mode<presentation>
+
+% Requirement
+\RequirePackage{tikz}
+
+% Settings
+\useinnertheme{uc3m}
+\useoutertheme{uc3m}
+\usecolortheme{uc3m}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]  
+\setbeamertemplate{footline}{%
+    \vspace{-2em}
+    \ifnum\thepage>1\relax%
+    \hfill
+    \color{uc3mblue}
+    \insertslidenavigationsymbol 
+    \insertframenavigationsymbol   
+    \insertsubsectionnavigationsymbol  
+    \insertsectionnavigationsymbol
+    \insertdocnavigationsymbol  
+    \insertbackfindforwardnavigationsymbol 
+    \hspace{1em}  
+    \usebeamerfont{footline} 
+    \insertframenumber/\inserttotalframenumber 
+    \hspace{1em}
+    \vspace{0.5em}
+   \fi
+}
+
+\mode<all>

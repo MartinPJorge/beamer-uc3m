@@ -1,0 +1,36 @@
+\mode<presentation>
+
+\setbeamertemplate{background}{
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \fill[color=uc3mblue] (0,0.5\paperheight) rectangle (\the\paperwidth,\the\paperheight);
+  \fill[color=uc3mgray] (0.6\paperwidth,0) rectangle (\the\paperwidth,0.5\paperheight);
+  \node[inner sep=0pt] (logo) at (0.5\paperwidth,0.72\paperheight){\includegraphics[height=0.4\paperheight]{logo-uc3m}};
+
+    \ifnum\thepage>1\relax%
+   \fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+   \fi
+  \end{tikzpicture}
+}
+
+% Title page
+\defbeamertemplate*{title page}{uc3m}[1][]
+{ 
+   \vskip0.5\paperheight%
+   \begin{columns}
+       \begin{column}{0.62\textwidth}
+           \vfill
+            \usebeamerfont{title}\color{uc3mblue}\textbf{\inserttitle}\\
+            \usebeamerfont{date} \insertdate
+            \vfill
+       \end{column}
+       \begin{column}{0.38\textwidth}
+           \vfill
+           \usebeamerfont{author} \insertauthor
+           \vfill
+       \end{column}
+   \end{columns}
+}
+
+\mode
+<all>
