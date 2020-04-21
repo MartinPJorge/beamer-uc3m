@@ -1,12 +1,15 @@
 \mode<presentation>
 
+
+
+
+
 \setbeamertemplate{background}{
   \begin{tikzpicture}
   \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
   \fill[color=uc3mblue] (0,0.5\paperheight) rectangle (\the\paperwidth,\the\paperheight);
   \fill[color=uc3mgray] (0.6\paperwidth,0) rectangle (\the\paperwidth,0.5\paperheight);
-  \node[inner sep=0pt] (logo) at (0.5\paperwidth,0.72\paperheight){\includegraphics[height=0.4\paperheight]{logo-uc3m}};
-
+  \logocover % varies depending on the polito option
     \ifnum\thepage>1\relax%
    \fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
    \fi
