@@ -57,6 +57,20 @@
     \node (logo) at (0.93\paperwidth,0.6){\includegraphics[height=0.07\paperheight]{polito-logo}};
   }
 }
+\DeclareOption{politocnr}{
+    \renewcommand{\logocover}{
+      \node[inner sep=0pt] (logo-uc3m) at (0.22\paperwidth,0.72\paperheight){\includegraphics[height=0.3\paperheight]{logo-uc3m}};
+      \node[inner sep=0pt] (logo-polito) at (0.55\paperwidth,0.72\paperheight){\includegraphics[height=0.15\paperheight]{politecnicoditorino}};
+      \node[inner sep=0pt] (logo-cnr) at (0.83\paperwidth,0.72\paperheight){\includegraphics[height=0.12\paperheight]{cnrieiit}};
+    }
+
+
+  \renewcommand{\headerlogo}{
+    \node (logo) at (0.76\paperwidth,0.6){\includegraphics[height=0.07\paperheight]{uc3m}};
+    \node (logo) at (0.84\paperwidth,0.6){\includegraphics[height=0.07\paperheight]{polito-logo}};
+    \node (logo) at (0.93\paperwidth,0.6){\includegraphics[height=0.05\paperheight]{cnrieiit}};
+  }
+}
 \ProcessOptions\relax
 
 
