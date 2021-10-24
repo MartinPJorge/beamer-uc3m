@@ -36,14 +36,14 @@
 %% HEADER LOGO COMMAND %%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\headerlogo}{
-    \node (logo) at (0.9\paperwidth,0.6){\includegraphics[height=0.07\paperheight]{uc3m}};
+    \node (logo) at (0.9\paperwidth,0.6){\includegraphics[height=0.07\paperheight]{uc3m-transparent}};
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 %% COVER LOGO COMMAND %%
 %%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\logocover}{
-  \node[inner sep=0pt] (logo) at (0.5\paperwidth,0.72\paperheight){\includegraphics[height=0.4\paperheight]{logo-uc3m}};
+  \node[inner sep=0pt] (logo) at (0.5\paperwidth,0.72\paperheight){\includegraphics[height=0.4\paperheight]{logo-uc3m-transparent}};
 }
 \DeclareOption{polito}{
     \renewcommand{\logocover}{
@@ -53,7 +53,7 @@
 
 
   \renewcommand{\headerlogo}{
-    \node (logo) at (0.85\paperwidth,0.6){\includegraphics[height=0.07\paperheight]{uc3m}};
+    \node (logo) at (0.85\paperwidth,0.6){\includegraphics[height=0.07\paperheight]{uc3m-transparent}};
     \node (logo) at (0.93\paperwidth,0.6){\includegraphics[height=0.07\paperheight]{polito-logo}};
   }
 }
